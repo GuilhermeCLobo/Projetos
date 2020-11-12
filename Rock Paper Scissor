@@ -1,0 +1,34 @@
+#rock Paper Scissors
+import random
+Computer=random.randint(0,2)
+# if Computer = 0 (Rock)/if Computer = 1 (Paper)/if Computer = 2 (Scissors)
+User=str(input("What do you wanna play? Rock,Paper or Scissor? "))
+while(True):
+   if User.upper() == "ROCK" or User.upper() == "PAPER" or User.upper() == "SCISSOR":
+       break
+   User=str(input("Invalid Answer,Make sure that you are only using:rock,Paper and Scissor as an answer "))
+if User.upper()=="ROCK":
+   if Computer == 0:
+      print("Tie,both players played Rock")
+   elif Computer ==1:
+      print("You lost,The Computer Paper won aganst your Rock")
+   else:
+      print("You won,Your Rock smashed the Computer Scissor,good job")
+if User.upper()=="Paper":
+   if Computer == 0:
+      print("You won,Your Paper covered the Computer Rock,good job")
+   elif Computer ==1:
+      print("Tie,both players played Paper")
+   else:
+      print("You lost,The Computer Scissors won aganst your Papel")
+if User.upper()=="Scissor":
+   if Computer == 0:
+      print("You lost,The Computer Rock smashed your Scissor")
+   elif Computer ==1:
+      print("You won,Your Scissor cut the Computer Paper,good job")
+   else:
+      print("Tie,both players played Scissor")         
+      
+   
+   
+   
